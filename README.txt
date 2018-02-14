@@ -7,3 +7,5 @@
     (8 points)- J, X
     (10 points)-Q, Z
     (0 points)- Blank Tiles 
+
+Tim isleta
