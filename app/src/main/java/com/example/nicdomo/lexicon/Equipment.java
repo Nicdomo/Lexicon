@@ -11,7 +11,10 @@ public class Equipment {
     public int defBonus;
     public String wearableType;
 
+    public Equipment(String name, int healthBonus, int defBonus, String wearableType){
 
+
+    }
     public void increaseHealth(){
 
     }

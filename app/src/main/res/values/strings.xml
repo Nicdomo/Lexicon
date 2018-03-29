@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Lexicon</string>
+    <string name="playButton">Play</string>
+    <string name="buttonLeaderBoard">Button</string>
+    <string name="buttonContinue">Continue</string>
+    <string name="editTextName">Name</string>
+    <string name="textviewSelectClass">Select a Class</string>
+    <string name="buttonMage">Mage</string>
+    <string name="mageClassDescription">The mage class facing the front</string>
+    <string name="textviewMage">Mage</string>
+    <string name="textviewArcher">Archer</string>
+    <string name="textviewWarrior">Warrior</string>
+    <string name="textviewMageDescription">High Damage \nLow HP</string>
+    <string name="textviewArcherDescription">Moderate Damage \nModerate HP</string>
+    <string name="textviewWarriorDescription">Low Damage \nHigh HP</string>
+    <string name="buttonCreate">Create</string>
+    <string name="textviewHP">HP:100</string>
+    <string name="textviewChooseLevel">Choose a level</string>
+    <string name="textviewName">Name: Dominique</string>
+    <string name="textviewDamage">Base Damage: 200</string>
+    <string name="textviewhP">TextView</string>
+    <string name="textviewhp">HP:10000</string>
+    <string name="button_1">A</string>
+    <string name="buttonPlay">Play Level</string>
+    <string name="textviewstar1desc">Defeat all monsters</string>
+    <string name="textviewstar3desc">Defeat each monster using 1 word</string>
+    <string name="textviewstar2desc">Finish the level with full health</string>
 </resources>

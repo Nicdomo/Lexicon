@@ -5,7 +5,21 @@ package com.example.nicdomo.lexicon;
  */
 
 public class Boss extends Enemy {
+    int defense;
 
-    Equipment armor;
-    Equipment weapon;
+    public Boss(int health, int damage) {
+        super(health, damage);
+    }
+    public Boss(int health, int damage, int defense) {
+        super(health, damage);
+        setDefense(defense);
+    }
+    public void setDefense(int defense){
+        this.defense = defense;
+    }
+    public int getDefense(){
+        return this.defense;
+    }
+
+
 }
