@@ -2,6 +2,7 @@ package com.example.nicdomo.lexicon;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
+
     // 	Oxford Dictionary Application ID b1f4982e
     //Oxford Dictionary Application Key 5fa15145c3774df560e0dec7c596cf8e
     @Override

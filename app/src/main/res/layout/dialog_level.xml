@@ -19,17 +19,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/star1"
+        android:id="@+id/star1_1"
         android:layout_width="74dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/star"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/star2" />
+        app:layout_constraintTop_toBottomOf="@+id/star1_2" />
 
     <ImageView
-        android:id="@+id/star2"
+        android:id="@+id/star1_2"
         android:layout_width="74dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
@@ -39,14 +39,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/star3"
+        android:id="@+id/star1_3"
         android:layout_width="74dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/star"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/star1" />
+        app:layout_constraintTop_toBottomOf="@+id/star1_1" />
 
     <TextView
         android:id="@+id/star1desc"
@@ -55,7 +55,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:text="@string/textviewstar1desc"
-        app:layout_constraintStart_toEndOf="@+id/star2"
+        app:layout_constraintStart_toEndOf="@+id/star1_2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
         android:text="@string/textviewstar2desc"
-        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintStart_toEndOf="@+id/star1_1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -75,6 +75,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="196dp"
         android:text="@string/textviewstar3desc"
-        app:layout_constraintStart_toEndOf="@+id/star3"
+        app:layout_constraintStart_toEndOf="@+id/star1_3"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -12,7 +12,12 @@ import android.widget.Toast;
 
 public class LevelSelect extends AppCompatActivity {
     Player player;
-
+    //keys for STATE SAVING
+    private final static String LEVEL_FOREST = "LEVEL_FOREST";
+    private final static String LEVEL_DESERT = "LEVEL_DESERT";
+    private final static String LEVEL_UNDERWATER = "LEVEL_UNDERWATER";
+    private final static String LEVEL_NORTHPOLE = "LEVEL_NORTHPOLE";
+    private final static String LEVEL_HELL = "LEVEL_HELL";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

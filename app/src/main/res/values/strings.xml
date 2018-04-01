@@ -15,7 +15,7 @@
     <string name="textviewWarriorDescription">Low Damage \nHigh HP</string>
     <string name="buttonCreate">Create</string>
     <string name="textviewHP">HP:100</string>
-    <string name="textviewChooseLevel">Choose a level</string>
+    <string name="textviewChooseLevel">Choose a stage</string>
     <string name="textviewName">Name: Dominique</string>
     <string name="textviewDamage">Base Damage: 200</string>
     <string name="textviewhP">TextView</string>
@@ -25,4 +25,9 @@
     <string name="textviewstar1desc">Defeat all monsters</string>
     <string name="textviewstar3desc">Defeat each monster using 1 word</string>
     <string name="textviewstar2desc">Finish the level with full health</string>
+    <string name="fifth_stage">Hell</string>
+    <string name="fourth_stage">North Pole</string>
+    <string name="third_stage">Underwater</string>
+    <string name="second_stage">Desert</string>
+    <string name="first_stage">Forest</string>
 </resources>

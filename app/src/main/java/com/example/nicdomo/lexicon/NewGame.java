@@ -24,19 +24,24 @@ public class NewGame extends AppCompatActivity {
         setupButtons();
 
         ImageView archer=(ImageView)findViewById(R.id.archerIcon);
+//        ImageView mage=(ImageView)findViewById(R.id.mageIcon);
+//        ImageView warrior=(ImageView)findViewById(R.id.warriorIcon);
+
         archer.setImageResource(R.drawable.archer_animation_front);
         AnimationDrawable animated_archer = (AnimationDrawable)archer.getDrawable();
-        animated_archer.start();
 
-
+//
+//
 //        ImageView warrior=(ImageView)findViewById(R.id.warriorIcon);
 //        warrior.setImageResource(R.drawable.warrior_animation_front);
-//        AnimationDrawable animated_warrior = (AnimationDrawable)warrior.getDrawable();
+//        AnimationDrawable animated_warrior = (AnimationDrawable)warrior.getBackground();
 //        animated_warrior.start();
-//
-//        ImageView mage=(ImageView)findViewById(R.id.mageIcon);
+
+
 //        mage.setImageResource(R.drawable.mage_animation_front);
 //        AnimationDrawable animated_mage = (AnimationDrawable)mage.getDrawable();
+
+        animated_archer.start();
 //        animated_mage.start();
 
     }
