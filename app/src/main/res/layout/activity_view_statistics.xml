@@ -16,9 +16,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Statistics"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,14 +25,12 @@
     <TextView
         android:id="@+id/profileTV"
         android:layout_width="56dp"
-        android:layout_height="20dp"
+        android:layout_height="26dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
         android:text="Profile"
-        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/statisticsTV" />
 
@@ -43,15 +38,10 @@
         android:id="@+id/longestTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
         android:text="Longest Word"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/longestword"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sixletterwordTV" />
+        tools:layout_editor_absoluteY="90dp" />
 
     <TextView
         android:id="@+id/scoreTV"
@@ -60,22 +50,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/score"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteY="353dp" />
 
     <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
-        android:layout_marginTop="28dp"
-        android:text="ScoreTV"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classnameTV" />
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/fourletterwordTV"
@@ -83,38 +69,31 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
         android:text="4 - Letter Word"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/fourletterword"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scoreTV" />
+        tools:layout_editor_absoluteY="161dp" />
 
     <TextView
         android:id="@+id/fiveletterwordTV"
         android:layout_width="wrap_content"
-        android:layout_height="15dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
         android:text="5 - Letter Word"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/fiveletterWord"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourletterwordTV" />
+        tools:layout_editor_absoluteY="203dp" />
 
     <TextView
         android:id="@+id/fiveletterWord"
-        android:layout_width="68dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginTop="16dp"
-        android:text="5-letterTV"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourletterword" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/sixletterwordTV"
@@ -122,68 +101,36 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
         android:text="6 - Letter Word"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/sixletterword"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fiveletterwordTV" />
-
-    <TextView
-        android:id="@+id/sixletterword"
-        android:layout_width="68dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="224dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="6-letterTV"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fiveletterWord"
-        app:layout_constraintVertical_bias="0.282" />
+        tools:layout_editor_absoluteY="246dp" />
 
     <TextView
-        android:id="@+id/fourletterword"
-        android:layout_width="66dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="296dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="4-letterTV"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.721"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score"
-        app:layout_constraintVertical_bias="0.265" />
-
-    <TextView
-        android:id="@+id/classnameTV"
+        android:id="@+id/eightLetterWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginTop="24dp"
-        android:text="Class Name"
-        android:textColor="#FFFFFF"
+        android:layout_marginBottom="176dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/statisticsTV" />
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/longestword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="24dp"
-        android:text="longestword"
-        android:textColor="#FFFFFF"
+        android:id="@+id/sevenLetterWord2"
+        android:layout_width="63dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sixletterword" />
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
