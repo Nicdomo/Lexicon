@@ -17,7 +17,7 @@
     <string name="textviewHP">HP:100</string>
     <string name="textviewChooseLevel">Choose a stage</string>
     <string name="textviewName">Name: Dominique</string>
-    <string name="textviewDamage">Base Damage: 200</string>
+    <string name="textviewDamage"></string>
     <string name="textviewhP">TextView</string>
     <string name="textviewhp">HP:10000</string>
     <string name="button_1">A</string>
@@ -30,4 +30,5 @@
     <string name="third_stage">Underwater</string>
     <string name="second_stage">Desert</string>
     <string name="first_stage">Forest</string>
+    <string name="textviewPlayerName">Hello,Name!</string>
 </resources>

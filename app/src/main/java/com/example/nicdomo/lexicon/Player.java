@@ -62,6 +62,7 @@ public class Player implements Serializable{
 
 
     */
+    private int id;
     private String name;
     private String className;
     private int currentHealth;
@@ -105,9 +106,12 @@ public class Player implements Serializable{
     private int thirdBook;
     private int fourthBook;
     private int fifthBook;
+    private int skillPoints;
 
 
+    public Player () {
 
+    }
     public Player(String name, String className){
         this.name = name;
         this.className = className;
@@ -120,18 +124,41 @@ public class Player implements Serializable{
             setDamage(30);
             setCurrentHealth(100);
             setMaxHealth(100);
-        }else{//archer
+        }else if(className=="archer"){//archer
             setDamage(20);
             setCurrentHealth(200);
             setMaxHealth(200);
         }
-
+        initBooks();
+        initCtr();
+        initCtr();
     }
 
     public String getName() {
         return name;
     }
-
+    public boolean canUpgrade(){
+        boolean canUpgrade = false;
+        if(skillPoints>0){
+            canUpgrade = true;
+        }
+        return canUpgrade;
+    }
+    public void upgradeHealth(){
+        if(canUpgrade()){
+            maxHealth +=10;
+            skillPoints--;
+        }
+    }
+    public void upgradeDamage(){
+        if(canUpgrade()){
+            damage +=10;
+            skillPoints--;
+        }
+    }
+    public void increasePoints(){
+        skillPoints++;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -143,7 +170,21 @@ public class Player implements Serializable{
     public void setClassName(String className) {
         this.className = className;
     }
+    public int getSkillPoints() {
+        return skillPoints;
+    }
 
+    public void setSkillPoints(int skillPoints) {
+        this.skillPoints = skillPoints;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public int getCurrentHealth() {
         return currentHealth;
     }
@@ -408,6 +449,43 @@ public class Player implements Serializable{
             }
         }
     }
+    public void initBooks(){
+        setFirstBook(0);
+        setSecondBook(0);
+        setThirdBook(0);
+        setFourthBook(0);
+        setFifthBook(0);
+        setEquippedBook("");
+    }
+    public void initCtr(){
+        setFourCtr(0);
+        setFiveCtr(0);
+        setSixCtr(0);
+        setSevenCtr(0);
+        setEightCtr(0);
+    }
+    public void initStars(){
+        setForestOne(0);
+        setForestTwo(0);
+        setForestThree(0);
+
+        setDesertOne(0);
+        setDesertTwo(0);
+        setDesertThree(0);
+
+        setUnderwaterOne(0);
+        setUnderwaterTwo(0);
+        setUnderwaterThree(0);
+
+        setHellOne(0);
+        setHellTwo(0);
+        setHellThree(0);
+
+        setIceOne(0);
+        setIceTwo(0);
+        setIceThree(0);
+    }
+
 
 
 }
