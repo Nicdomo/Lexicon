@@ -17,6 +17,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/editTextName"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
