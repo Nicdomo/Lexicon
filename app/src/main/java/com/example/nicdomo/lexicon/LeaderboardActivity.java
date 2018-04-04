@@ -30,7 +30,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-        
+
         this.setupButtons();
         this.prepareProfileData();
     }
