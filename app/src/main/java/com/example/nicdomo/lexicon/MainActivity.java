@@ -3,6 +3,7 @@ package com.example.nicdomo.lexicon;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
+    MediaPlayer music;
     // 	Oxford Dictionary Application ID b1f4982e
     //Oxford Dictionary Application Key 5fa15145c3774df560e0dec7c596cf8e
     @Override
@@ -19,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.setupButtons();
-
+        this.setupMusic();
+    }
+    private void setupMusic(){
+        music= MediaPlayer.create(MainActivity.this,R.raw.main_music);
+        music.start();
     }
     private void setupButtons(){
         ImageButton newGameButton = this.findViewById(R.id.imageButtonNewGame);
