@@ -56,6 +56,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="48dp"
         android:text="@string/textviewstar1desc"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,6 +67,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="96dp"
         android:text="@string/textviewstar2desc"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,6 +78,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="140dp"
         android:text="@string/textviewstar3desc"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

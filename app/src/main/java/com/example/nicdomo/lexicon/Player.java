@@ -78,6 +78,9 @@ public class Player implements Serializable{
     private int sevenCtr;
     private int eightCtr;
 
+    //if player had a saved game or not
+    private boolean savedGame = false;
+
 
     //stores stars collected from each level
     private int forestOne; //0 false, 1 true

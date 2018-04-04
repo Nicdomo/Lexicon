@@ -5,44 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nicdomo.lexicon.NewGame"
-    android:background="@drawable/guide_character">
+    android:background="@drawable/leader_board_background">
 
-    <ImageView
-        android:id="@+id/mageIcon"
-        android:layout_width="128dp"
-        android:layout_height="156dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/mageClassDescription"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
-        app:srcCompat="@drawable/mage_front"
-        tools:layout_editor_absoluteX="16dp" />
 
-    <ImageView
-        android:id="@+id/archerIcon"
-        android:layout_width="117dp"
-        android:layout_height="144dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419"
-        app:srcCompat="@drawable/archer_front"
-        tools:layout_editor_absoluteX="42dp" />
-
-    <ImageView
-        android:id="@+id/warriorIcon"
-        android:layout_width="129dp"
-        android:layout_height="159dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974"
-        app:srcCompat="@drawable/warrior_front"
-        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textViewMageDescription"
@@ -54,12 +19,13 @@
         android:layout_marginTop="8dp"
         android:lines="3"
         android:text="@string/textviewMageDescription"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/textViewArcherDescription"
@@ -71,12 +37,13 @@
         android:layout_marginTop="8dp"
         android:lines="3"
         android:text="@string/textviewArcherDescription"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <TextView
         android:id="@+id/textViewWarriorDescription"
@@ -88,12 +55,13 @@
         android:layout_marginTop="8dp"
         android:lines="3"
         android:text="@string/textviewWarriorDescription"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <ImageButton
         android:id="@+id/imageButtonArcher"
@@ -106,10 +74,10 @@
         android:background="@drawable/archer_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <ImageButton
         android:id="@+id/imageButtonWarrior"
@@ -122,15 +90,15 @@
         android:background="@drawable/warrior_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <ImageButton
         android:id="@+id/imageButtonMage3"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -138,9 +106,120 @@
         android:background="@drawable/mage_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.196" />
+
+    <ImageView
+        android:id="@+id/MageBox"
+        android:layout_width="129dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageView
+        android:id="@+id/ArcherBox"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageView
+        android:id="@+id/WarriorBox"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:srcCompat="@drawable/letter_blank" />
+    <ImageView
+        android:id="@+id/mageIcon"
+        android:layout_width="96dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/mageClassDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@drawable/mage_front" />
+
+    <ImageView
+        android:id="@+id/archerIcon"
+        android:layout_width="70dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/archer_front" />
+
+    <ImageView
+        android:id="@+id/warriorIcon"
+        android:layout_width="103dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84000003"
+        app:srcCompat="@drawable/warrior_front" />
+
+    <TextView
+        android:id="@+id/textViewSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/textviewSelect"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
