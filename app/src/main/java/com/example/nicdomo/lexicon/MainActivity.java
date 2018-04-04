@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
        continueButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent i = new Intent(MainActivity.this, LeaderboardActivity.class);
+               Intent i = new Intent(MainActivity.this, ContinueProfileActivity.class);
                startActivity(i);
                //continue intent here
 

@@ -1,6 +1,5 @@
 package com.example.nicdomo.lexicon;
 
-import android.graphics.Movie;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -8,9 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class LeaderboardActivity extends AppCompatActivity {
+public class ContinueProfileActivity extends AppCompatActivity {
 
     private ArrayList<Profile> profileList = new ArrayList<>();
     private RecyclerView recyclerView;
@@ -18,9 +16,9 @@ public class LeaderboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leaderboard);
+        setContentView(R.layout.activity_continue_profile);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewContinueProfile);
 
         mAdapter = new ProfileAdapter(profileList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -31,7 +29,6 @@ public class LeaderboardActivity extends AppCompatActivity {
         this.prepareProfileData();
     }
 
-    //call player class here
     private void prepareProfileData() {
         Profile profile = new Profile("johnDoe", "Warrior", 400);
         profileList.add(profile);
