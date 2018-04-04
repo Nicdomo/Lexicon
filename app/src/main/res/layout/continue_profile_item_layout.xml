@@ -45,6 +45,6 @@
         android:id="@+id/imageView2"
         android:layout_width="74dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/archer_avatar" />
+        android:background="@drawable/archer_avatar" />
 
 </android.support.constraint.ConstraintLayout>

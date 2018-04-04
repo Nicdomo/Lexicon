@@ -31,4 +31,5 @@
     <string name="second_stage">Desert</string>
     <string name="first_stage">Forest</string>
     <string name="textviewPlayerName">Hello,Name!</string>
+    <string name="textviewSelect">Select a Character</string>
 </resources>

@@ -67,15 +67,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button_cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintVertical_bias="0.50" />
     <ImageButton
         android:id="@+id/imageButtonShuffle"
         android:layout_width="50dp"
@@ -89,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.50" />
 
     <ImageButton
         android:id="@+id/imageButtonAttack"
@@ -105,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.50" />
 
     <ImageButton
         android:id="@+id/ImageButtonBlank1"
@@ -249,7 +248,7 @@
         app:layout_constraintHorizontal_bias="0.030"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot2"
@@ -265,7 +264,7 @@
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot3"
@@ -281,7 +280,7 @@
         app:layout_constraintHorizontal_bias="0.300"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
     android:id="@+id/slot4"
@@ -297,7 +296,7 @@
     app:layout_constraintHorizontal_bias="0.435"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.48" />
+    app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot5"
@@ -313,7 +312,7 @@
         app:layout_constraintHorizontal_bias="0.570"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot6"
@@ -329,7 +328,7 @@
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot7"
@@ -345,7 +344,7 @@
         app:layout_constraintHorizontal_bias="0.840"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
         android:id="@+id/slot8"
@@ -361,6 +360,6 @@
         app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.38" />
 
 </android.support.constraint.ConstraintLayout>
