@@ -78,14 +78,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="Upgrade Points"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/inventoryView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toEndOf="@+id/characterImage"
         app:layout_constraintTop_toBottomOf="@+id/damageView"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.093" />
 
     <TextView
         android:id="@+id/inventoryView"
@@ -96,23 +96,96 @@
         android:text="Inventory"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="277dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="86dp"
+        android:id="@+id/blank1"
+        android:layout_width="54dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/letter_blank"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="326dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/blank2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
+        app:srcCompat="@drawable/letter_blank" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="61dp"
+        android:id="@+id/blank2"
+        android:layout_width="54dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/blank3"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageView
+        android:id="@+id/blank3"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
         app:srcCompat="@drawable/letter_blank"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="326dp" />
+        tools:layout_editor_absoluteX="136dp" />
+
+    <ImageView
+        android:id="@+id/blank4"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/blank5"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageView
+        android:id="@+id/blank5"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/blank6"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageView
+        android:id="@+id/blank6"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryView"
+        app:srcCompat="@drawable/letter_blank" />
+
+    <ImageButton
+        android:id="@+id/addHealth"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_add_health"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addDamage"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blank3" />
+
+    <ImageButton
+        android:id="@+id/addDamage"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_add_damage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blank4" />
+
 </android.support.constraint.ConstraintLayout>
