@@ -26,7 +26,7 @@ public class ContinueProfileAdapter extends RecyclerView.Adapter<ContinueProfile
                 @Override
                 public void onClick(View view) {
                     Context context = view.getContext();
-                    Intent intent = new Intent(context, Battle.class);
+                    Intent intent = new Intent(context, LevelSelect.class);
                     context.startActivity(intent);
                 }
             });

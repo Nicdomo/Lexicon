@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton newGameButton = this.findViewById(R.id.imageButtonNewGame);
         ImageButton continueButton = this.findViewById(R.id.imageButtonContinue);
         ImageButton leaderboardButton = this.findViewById(R.id.imageButtonLeaderBoard);
+        ImageButton creditButton = this.findViewById(R.id.imageButtonCredits);
         amanager=(AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
        newGameButton.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +115,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        creditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //show credits here
+                Intent i = new Intent(MainActivity.this, Credits.class);
+                startActivity(i);
+            }
+        });
     }
+
+
 
     @Override
     protected void onPause() {
