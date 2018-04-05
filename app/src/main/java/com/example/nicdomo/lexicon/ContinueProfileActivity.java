@@ -12,7 +12,7 @@ public class ContinueProfileActivity extends AppCompatActivity {
 
     private ArrayList<Profile> profileList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private ProfileAdapter mAdapter;
+    private ContinueProfileAdapter cpAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +20,11 @@ public class ContinueProfileActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewContinueProfile);
 
-        mAdapter = new ProfileAdapter(profileList);
+        cpAdapter = new ContinueProfileAdapter(profileList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
+        recyclerView.setAdapter(cpAdapter);
 
         this.prepareProfileData();
     }
@@ -39,6 +39,6 @@ public class ContinueProfileActivity extends AppCompatActivity {
         profile = new Profile("pablo", "Archer", 100);
         profileList.add(profile);
 
-        mAdapter.notifyDataSetChanged();
+        cpAdapter.notifyDataSetChanged();
     }
 }
