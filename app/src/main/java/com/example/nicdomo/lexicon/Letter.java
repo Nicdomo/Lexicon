@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class Letter {
     Random random;
+    boolean disabled;
     private ImageButton imageButton;
     private char assignedLetter;
     public Letter(char c){
@@ -21,7 +22,7 @@ public class Letter {
         random = new Random();
         setImageButton(imageButton);
         setAssignedLetter(assignedLetter);
-
+        disabled = false;
     }
 
     public ImageButton getImageButton() {
@@ -87,6 +88,7 @@ public class Letter {
             imageButton.setBackgroundResource(R.drawable.letter_z);
         }
     }
+
     public void disable(){
         if(assignedLetter =='a'){
             imageButton.setBackgroundResource(R.drawable.letter_a_d);
@@ -141,6 +143,7 @@ public class Letter {
         }else if(assignedLetter =='z'){
             imageButton.setBackgroundResource(R.drawable.letter_z_d);
         }
+        disabled = true;
         Log.d("isDisabled","Letter Disabled");
     }
     public void enable(){
@@ -197,14 +200,23 @@ public class Letter {
         }else if(assignedLetter =='z'){
             imageButton.setBackgroundResource(R.drawable.letter_z);
         }
+        disabled = false;
     }
     public char getAssignedLetter() {
         return assignedLetter;
     }
 
+    public boolean isDisabled() {
+        return disabled;
+    }
+
+    public void setDisabled(boolean disabled) {
+        this.disabled = disabled;
+    }
+
     public void setAssignedLetter(char letter) {
         this.assignedLetter = letter;
-        if(letter =='a'){
+        if(letter=='a'){
             imageButton.setBackgroundResource(R.drawable.letter_a);
         }else if(letter =='b'){
             imageButton.setBackgroundResource(R.drawable.letter_b);
@@ -257,6 +269,7 @@ public class Letter {
         }else if(letter =='z'){
             imageButton.setBackgroundResource(R.drawable.letter_z);
         }
+
     }
 
     public void randomizeLetter(){
@@ -264,11 +277,10 @@ public class Letter {
         char c = (char)(r.nextInt(26) + 'a');
         setAssignedLetter(c);
         setImageButtonWithLetter(c);
-
     }
+
     public char pressed(){
         this.disable();
-
         return assignedLetter;
 
     }
