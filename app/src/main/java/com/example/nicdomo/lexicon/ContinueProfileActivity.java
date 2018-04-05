@@ -1,10 +1,13 @@
 package com.example.nicdomo.lexicon;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -27,6 +30,7 @@ public class ContinueProfileActivity extends AppCompatActivity {
         recyclerView.setAdapter(cpAdapter);
 
         this.prepareProfileData();
+        this.setupButtons();
     }
 
     private void prepareProfileData() {
@@ -40,5 +44,18 @@ public class ContinueProfileActivity extends AppCompatActivity {
         profileList.add(profile);
 
         cpAdapter.notifyDataSetChanged();
+    }
+
+    private void setupButtons(){
+        ImageButton backButton = this.findViewById(R.id.imageButtonBack2);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ContinueProfileActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

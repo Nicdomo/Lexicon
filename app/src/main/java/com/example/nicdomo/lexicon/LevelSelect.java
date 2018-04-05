@@ -320,6 +320,7 @@ public class LevelSelect extends AppCompatActivity {
         ImageButton third = this.findViewById(R.id.imageButtonThird);
         ImageButton fourth = this.findViewById(R.id.imageButtonFourth);
         ImageButton fifth = this.findViewById(R.id.imageButtonFifth);
+        ImageButton backButton = this.findViewById(R.id.imageButtonBack2);
 
         first.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -359,6 +360,13 @@ public class LevelSelect extends AppCompatActivity {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(LevelSelect.this);
                 View  mView = getLayoutInflater().inflate(R.layout.dialog_level, null);
                 openDialog("hell");
+            }
+        });
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LevelSelect.this, NewGame.class);
+                startActivity(i);
             }
         });
 

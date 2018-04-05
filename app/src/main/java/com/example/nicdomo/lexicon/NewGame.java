@@ -71,6 +71,7 @@ public class NewGame extends AppCompatActivity {
         ImageButton selectMage = this.findViewById(R.id.imageButtonMage3);
         ImageButton selectWarrior = this.findViewById(R.id.imageButtonWarrior);
         ImageButton selectArcher = this.findViewById(R.id.imageButtonArcher);
+        ImageButton backButton = this.findViewById(R.id.imageButtonBack);
 
         selectMage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,6 +179,13 @@ public class NewGame extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
+            }
+        });
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(NewGame.this, MainActivity.class);
+                startActivity(i);
             }
         });
 
