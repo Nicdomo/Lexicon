@@ -173,15 +173,15 @@ public class Player implements Serializable{
         this.name = name;
         this.className = className;
 
-        if(className=="warrior"){
+        if(className.equals("warrior")){
             setDamage(10);
             setCurrentHealth(300);
             setMaxHealth(300);
-        }else if (className=="mage"){
+        }else if (className.equals("mage")){
             setDamage(30);
             setCurrentHealth(100);
             setMaxHealth(100);
-        }else if(className=="archer"){//archer
+        }else if(className.equals("archer")){//archer
             setDamage(20);
             setCurrentHealth(200);
             setMaxHealth(200);
