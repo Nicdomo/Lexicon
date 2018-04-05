@@ -11,7 +11,7 @@
         android:id="@+id/imageView20"
         android:layout_width="74dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="68dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +69,7 @@
         android:id="@+id/imageView15"
         android:layout_width="72dp"
         android:layout_height="87dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="60dp"
         android:layout_marginStart="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -207,6 +207,21 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:srcCompat="@drawable/archer_button" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack2"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
 
 
 </android.support.constraint.ConstraintLayout>
