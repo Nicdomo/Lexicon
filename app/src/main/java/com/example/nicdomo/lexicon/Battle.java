@@ -3,6 +3,7 @@ package com.example.nicdomo.lexicon;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,8 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Battle extends AppCompatActivity {
+    MediaPlayer music;
+    Boolean music_on;
     ProgressBar progressBar;
     private int  progressBarS2atus = 0;
     private Handler progressBarHandler = new Handler();
@@ -98,7 +101,22 @@ public class Battle extends AppCompatActivity {
         setCharacter(player.getClassName());
         setupButtons(player);
 
+        this.setupMusic();
     }
+
+    private void setupMusic(){
+        music = MediaPlayer.create(this, R.raw.battle_music);
+        Log.d("music","music started");
+        music.start();
+        music.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                music.start();
+            }
+        });
+        music_on = true;
+    }
+
     private void setCharacter(String className){
         if(className=="mage"){
             Character.setBackgroundResource(R.drawable.mage_right);
