@@ -65,6 +65,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //potions
     public static final String COLUMN_POTIONS = "potions";
     public static final String COLUMN_SKILLPOINTS = "skill_points";
+    //equipped slots
+    public static final String COLUMN_SLOT1 = "slot_one";
+    public static final String COLUMN_SLOT2 = "slot_two";
+    public static final String COLUMN_SLOT3 = "slot_three";
+    public static final String COLUMN_SLOT4 = "slot_four";
+    public static final String COLUMN_SLOT5 = "slot_five";
 
 
     public DatabaseHelper(Context context) {
@@ -110,6 +116,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_HELL_TWO + "NUMERIC, "
                 + COLUMN_HELL_THREE + "NUMERIC, "
                 + COLUMN_SKILLPOINTS + "INTEGER "
+                + COLUMN_SLOT1 + "NUMERIC, "
+                + COLUMN_SLOT2 + "NUMERIC, "
+                + COLUMN_SLOT3 + "NUMERIC, "
+                + COLUMN_SLOT4 + "NUMERIC, "
+                + COLUMN_SLOT5 + "NUMERIC, "
                 + ");";
 
         sqLiteDatabase.execSQL(playerDatabase);
@@ -189,6 +200,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(this.COLUMN_HELL_THREE, player.getHellThree());
 
         cv.put(this.COLUMN_SKILLPOINTS, player.getSkillPoints());
+        cv.put(this.COLUMN_SLOT1, player.getSlot1());
+        cv.put(this.COLUMN_SLOT1, player.getSlot2());
+        cv.put(this.COLUMN_SLOT1, player.getSlot3());
+        cv.put(this.COLUMN_SLOT1, player.getSlot4());
+        cv.put(this.COLUMN_SLOT1, player.getSlot5());
 
 //        + COLUMN_NAME + " TEXT NOT NULL, "
 //        + COLUMN_CLASS + " TEXT NOT NULL, "
@@ -340,6 +356,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             int skillPoints = c.getInt(c.getColumnIndex(this.COLUMN_SKILLPOINTS));
             player.setSkillPoints(skillPoints);
+
+            int slot1 = c.getInt(c.getColumnIndex(this.COLUMN_SLOT1));
+            player.setSlot1(slot1);
+
+            int slot2 = c.getInt(c.getColumnIndex(this.COLUMN_SLOT2));
+            player.setSlot1(slot2);
+
+            int slot3 = c.getInt(c.getColumnIndex(this.COLUMN_SLOT3));
+            player.setSlot1(slot3);
+
+            int slot4 = c.getInt(c.getColumnIndex(this.COLUMN_SLOT4));
+            player.setSlot1(slot4);
+
+            int slot5 = c.getInt(c.getColumnIndex(this.COLUMN_SLOT5));
+            player.setSlot1(slot5);
 
         }
         c.close();

@@ -54,9 +54,9 @@
         android:layout_height="18dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
-        android:maxHeight="10dp"
-        android:minHeight="10dp"
-        android:scaleY="1"
+        android:maxHeight="20dp"
+        android:minHeight="20dp"
+        android:scaleY="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

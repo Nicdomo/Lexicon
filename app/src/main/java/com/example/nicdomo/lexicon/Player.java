@@ -111,6 +111,60 @@ public class Player implements Serializable{
     private int fifthBook;
     private int skillPoints;
 
+    public int getSlot1() {
+        return slot1;
+    }
+
+    public void setSlot1(int slot1) {
+        this.slot1 = slot1;
+    }
+
+    public int getSlot2() {
+        return slot2;
+    }
+
+    public void setSlot2(int slot2) {
+        this.slot2 = slot2;
+    }
+
+    public int getSlot3() {
+        return slot3;
+    }
+
+    public void setSlot3(int slot3) {
+        this.slot3 = slot3;
+    }
+
+    public int getSlot4() {
+        return slot4;
+    }
+
+    public void setSlot4(int slot4) {
+        this.slot4 = slot4;
+    }
+
+    public int getSlot5() {
+        return slot5;
+    }
+
+    public void setSlot5(int slot5) {
+        this.slot5 = slot5;
+    }
+
+    private int slot1;
+    private int slot2;
+    private int slot3;
+    private int slot4;
+    private int slot5;
+
+    public boolean isSavedGame() {
+        return savedGame;
+    }
+
+    public void setSavedGame(boolean savedGame) {
+        this.savedGame = savedGame;
+    }
+
 
     public Player () {
 
@@ -487,6 +541,13 @@ public class Player implements Serializable{
         setIceOne(0);
         setIceTwo(0);
         setIceThree(0);
+    }
+    public void initSlots(){
+        setSlot1(0);
+        setSlot2(0);
+        setSlot3(0);
+        setSlot4(0);
+        setSlot5(0);
     }
 
 
