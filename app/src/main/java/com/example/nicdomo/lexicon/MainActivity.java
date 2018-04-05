@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupMusic(){
         music = MediaPlayer.create(this, R.raw.main_music);
         Log.d("music","music started");
+        music.start();
         music.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {

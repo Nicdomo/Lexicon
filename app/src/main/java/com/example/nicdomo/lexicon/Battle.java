@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -40,6 +41,8 @@ public class Battle extends AppCompatActivity {
     ImageButton slot6;
     ImageButton slot7;
     ImageButton slot8;
+
+    LinkedList<ImageButton>slots;
 
     Letter letter1;
     Letter letter2;
@@ -127,14 +130,7 @@ public class Battle extends AppCompatActivity {
         button7 = (ImageButton)findViewById(R.id.ImageButtonBlank7);
         button8 = (ImageButton)findViewById(R.id.ImageButtonBlank8);
 
-        slot1 = (ImageButton)findViewById(R.id.slot1);
-        slot2 = (ImageButton)findViewById(R.id.slot2);
-        slot3 = (ImageButton)findViewById(R.id.slot3);
-        slot4 = (ImageButton)findViewById(R.id.slot4);
-        slot5 = (ImageButton)findViewById(R.id.slot5);
-        slot6 = (ImageButton)findViewById(R.id.slot6);
-        slot7 = (ImageButton)findViewById(R.id.slot7);
-        slot8 = (ImageButton)findViewById(R.id.slot8);
+        initSlots();
         initLetters();
         attackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,7 +138,6 @@ public class Battle extends AppCompatActivity {
                 if(!attack_disabled){
                     attack();
                 }
-
             }
         });
 
@@ -185,11 +180,15 @@ public class Battle extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("buttonpress","button1 pressed");
                 //kunin yung letter assigned sa button
-                pickedLetter.add(letter1);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter1.isDisabled()){
+                    pickedLetter.add(letter1);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -198,11 +197,15 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button2 pressed");
-                pickedLetter.add(letter2);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter2.isDisabled()){
+                    pickedLetter.add(letter2);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -211,11 +214,15 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button3 pressed");
-                pickedLetter.add(letter3);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter3.isDisabled()){
+                    pickedLetter.add(letter3);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -224,11 +231,15 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button4 pressed");
-                pickedLetter.add(letter4);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter4.isDisabled()){
+                    pickedLetter.add(letter4);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -237,11 +248,15 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button5 pressed");
-                pickedLetter.add(letter5);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter5.isDisabled()){
+                    pickedLetter.add(letter5);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -249,11 +264,16 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button6 pressed");
-                pickedLetter.add(letter6);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter6.isDisabled()){
+                    pickedLetter.add(letter6);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -261,11 +281,17 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button1 pressed");
-                pickedLetter.add(letter7);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter7.isDisabled()){
+                    pickedLetter.add(letter7);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
 
@@ -273,11 +299,16 @@ public class Battle extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("buttonpress","button1 pressed");
-                pickedLetter.add(letter8);
-                setSlotValues();
-                enableAttack();
-                enableCancel();
-                enableShuffle();
+                if(!letter8.isDisabled()){
+                    pickedLetter.add(letter8);
+                    setSlotValues();
+                    enableAttack();
+                    enableCancel();
+                    enableShuffle();
+                }else{
+                    Toast.makeText(Battle.this,"Button is disabled!", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -302,6 +333,25 @@ public class Battle extends AppCompatActivity {
         letter7 = new Letter(button7,(char)(rand.nextInt(26) + 'a'));
         letter8 = new Letter(button8,(char)(rand.nextInt(26) + 'a'));
     }
+    private void initSlots(){
+        slots = new LinkedList<ImageButton>();
+        slot1 = (ImageButton)findViewById(R.id.slot1);
+        slot2 = (ImageButton)findViewById(R.id.slot2);
+        slot3 = (ImageButton)findViewById(R.id.slot3);
+        slot4 = (ImageButton)findViewById(R.id.slot4);
+        slot5 = (ImageButton)findViewById(R.id.slot5);
+        slot6 = (ImageButton)findViewById(R.id.slot6);
+        slot7 = (ImageButton)findViewById(R.id.slot7);
+        slot8 = (ImageButton)findViewById(R.id.slot8);
+        slots.add(slot1);
+        slots.add(slot2);
+        slots.add(slot3);
+        slots.add(slot4);
+        slots.add(slot5);
+        slots.add(slot6);
+        slots.add(slot7);
+        slots.add(slot8);
+    }
     //takes in an array of string and converts it to a string
     private String arrayToString(String[] array){
         String word;
@@ -323,7 +373,6 @@ public class Battle extends AppCompatActivity {
         letter6.randomizeLetter();
         letter7.randomizeLetter();
         letter8.randomizeLetter();
-
     }
     private void setValue(ImageButton button, char letter){
         if(letter =='a'){
@@ -381,7 +430,12 @@ public class Battle extends AppCompatActivity {
         }
     }
     private void attack(){
+        //if the word exists
         formedWord ="";
+        pickedLetter.clear();
+        for(ImageButton im:slots){
+            im.setBackgroundResource(R.drawable.letter_blank);
+        }
         disableAttack();
         disableCancel();
         disableShuffle();
@@ -389,15 +443,11 @@ public class Battle extends AppCompatActivity {
 
     private void cancel(){
         formedWord ="";
+        for(Letter l)
         pickedLetter.clear();
-        slot1.setBackgroundResource(R.drawable.letter_blank);
-        slot2.setBackgroundResource(R.drawable.letter_blank);
-        slot3.setBackgroundResource(R.drawable.letter_blank);
-        slot4.setBackgroundResource(R.drawable.letter_blank);
-        slot5.setBackgroundResource(R.drawable.letter_blank);
-        slot6.setBackgroundResource(R.drawable.letter_blank);
-        slot7.setBackgroundResource(R.drawable.letter_blank);
-        slot8.setBackgroundResource(R.drawable.letter_blank);
+        for(ImageButton im:slots){
+            im.setBackgroundResource(R.drawable.letter_blank);
+        }
         disableAttack();
         disableCancel();
         disableShuffle();
@@ -437,37 +487,12 @@ public class Battle extends AppCompatActivity {
 
     }
     private void setSlotValues(){
-
         if(pickedLetter.size()>0) {
             Log.d("Array", pickedLetter.size() + "");
-            //            if(pickedLetter.get(0)!=null){
-//                slot1 = pickedLetter.get(0).getImageButton();
-//            }
-//            if(pickedLetter.get(1)!=null){
-//                slot2 = pickedLetter.get(1).getImageButton();
-//            }
-//            if(pickedLetter.get(2)!=null){
-//                slot3 = pickedLetter.get(2).getImageButton();
-//            }
-//            if(pickedLetter.get(3)!=null){
-//                slot4 = pickedLetter.get(3).getImageButton();
-//            }
-//            if(pickedLetter.get(4)!=null){
-//                slot5 = pickedLetter.get(4).getImageButton();
-//            }
-//            if(pickedLetter.get(5)!=null){
-//                slot6 = pickedLetter.get(5).getImageButton();
-//            }
-//            if(pickedLetter.get(6)!=null){
-//                slot7 = pickedLetter.get(6).getImageButton();
-//            }
-//            if(pickedLetter.get(7)!=null){
-//                slot8 = pickedLetter.get(7).getImageButton();
-//            }
-//        }else{
-//            Log.d("Array",pickedLetter.size()+"");
-//        }
-
+            for(int i = 0; i<=pickedLetter.size()-1;i++){
+                setValue(slots.get(i),pickedLetter.get(i).getAssignedLetter());
+                pickedLetter.get(i).disable();
+            }
         }
     }
 
