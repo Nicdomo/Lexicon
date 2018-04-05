@@ -53,8 +53,6 @@ public class Battle extends AppCompatActivity {
     Letter letter7;
     Letter letter8;
 
-
-
     ImageButton attackBtn;
     ImageButton shuffleBtn;
     ImageButton cancelBtn;
@@ -63,6 +61,7 @@ public class Battle extends AppCompatActivity {
 
     LinkedList<Letter>pickedLetter;
 //    ImageButton[] letterbuttons;
+    LinkedList<Letter>buttonChoices;
     String[] choices = new String[8];
 
 
@@ -332,6 +331,15 @@ public class Battle extends AppCompatActivity {
         letter6 = new Letter(button6,(char)(rand.nextInt(26) + 'a'));
         letter7 = new Letter(button7,(char)(rand.nextInt(26) + 'a'));
         letter8 = new Letter(button8,(char)(rand.nextInt(26) + 'a'));
+        buttonChoices = new LinkedList<Letter>();
+        buttonChoices.add(letter1);
+        buttonChoices.add(letter2);
+        buttonChoices.add(letter3);
+        buttonChoices.add(letter4);
+        buttonChoices.add(letter5);
+        buttonChoices.add(letter6);
+        buttonChoices.add(letter7);
+        buttonChoices.add(letter8);
     }
     private void initSlots(){
         slots = new LinkedList<ImageButton>();
@@ -364,7 +372,7 @@ public class Battle extends AppCompatActivity {
     }
 
     private void shuffle(){
-//        Random r = new Random();
+//       Random r = new Random();
         letter1.randomizeLetter();
         letter2.randomizeLetter();
         letter3.randomizeLetter();
@@ -443,7 +451,11 @@ public class Battle extends AppCompatActivity {
 
     private void cancel(){
         formedWord ="";
-        for(Letter l)
+
+        for(Letter m: buttonChoices){
+            m.enable();
+        }
+
         pickedLetter.clear();
         for(ImageButton im:slots){
             im.setBackgroundResource(R.drawable.letter_blank);
